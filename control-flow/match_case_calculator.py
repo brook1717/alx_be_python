@@ -8,10 +8,10 @@ def main():
         return
 
     # Ask for operation
-    operator = input("Choose the operation (+, -, *, /): ")
+    operation = input("Choose the operation (+, -, *, /): ")
 
     # Use match-case to determine operation (requires Python 3.10+)
-    match operator:
+    match operation:
         case "+":
             result = num1 + num2
             print(f"The result is {result}.")
