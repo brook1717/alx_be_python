@@ -11,13 +11,12 @@ class BankAccount:
             print("Deposit amount must be positive.")
 
     def withdraw(self, amount):
-        """Withdraw the specified amount if funds are sufficient."""
         if amount <= self._account_balance:
             self._account_balance -= amount
-            print(f"Balance deducted: ${amount}")
+            print(f"Withdrew: ${amount}")
             return True
         else:
-            print("Insufficient funds!")
+            print("Insufficient funds.")
             return False
 
     def display_balance(self):
